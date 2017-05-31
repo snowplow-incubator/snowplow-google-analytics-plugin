@@ -1,6 +1,6 @@
 /*
  * Snowplow Google Analytics plugin.
- * 
+ *
  * Copyright (c) 2017-2017 Snowplow Analytics Ltd. All rights reserved.
  *
  * This program is licensed to you under the Apache License Version 2.0,
@@ -16,17 +16,22 @@
  */
 
 function SpGaPlugin(tracker, config) {
-  this.endpoint = config.endpoint;
+  this.endpoint = (config.endpoint.substr(-1) != '/') ? config.endpoint + '/' : config.endpoint;
+
+  var vendor = 'com.google.analytics';
+  var version = 'v1';
+  var path = this.endpoint + vendor + '/' + version + '?';
 
   var ga = getGA();
-  var sht = 'sendHitTask';
+  var sendHitTask = 'sendHitTask';
+
   ga(function(tracker) {
-    var originalSht = tracker.get(sht);
-    tracker.set(sht, function(model) {
+    var originalSendHitTask = tracker.get(sendHitTask);
+    tracker.set(sendHitTask, function(model) {
       var payload = model.get('hitPayload');
-      originalSht(model);
+      originalSendHitTask(model);
       var request = new XMLHttpRequest();
-      request.open('get', endpoint + '?' + payload, true);
+      request.open('get', path + payload, true);
       request.send();
     });
   });
