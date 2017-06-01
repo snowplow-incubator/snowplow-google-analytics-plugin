@@ -1,12 +1,16 @@
 language: node_js
-node_js: "6"
+node_js: '6'
 script: npm run eslint
 before_deploy: pip install --user release-manager==0.2.0
 deploy:
-  - provider: script
-    script: release-manager --config .release.yml --make-artifact --upload-artifact
-    skip_cleanup: true
-    on:
-      condition: |-
-        "$(node -e "console.log(require('./package.json').version);")" == "$TRAVIS_TAG"
-      tags: true
+- provider: script
+  script: release-manager --config .release.yml --make-artifact --upload-artifact
+  skip_cleanup: true
+  on:
+    condition: '"$(node -e "console.log(require(''./package.json'').version);")" ==
+      "$TRAVIS_TAG"'
+    tags: true
+env:
+  global:
+  - secure: lxVKREOGP3Bvr+PAz5Nf9qksXZwP1TO9MFiz5Wxcco3M7vKlu6XlpYJKoUuFRrfE84q3oAaAEgUtzSAp9L1c9nigcczQWAYz+1iaUwdgHP8qWObZpLa6W6WFdhdrVEi7MukSTOyS/wuyOs3inb/0br+/M993Y4EuWdST7yMeWiiShXomhvbTqGJ4OlHNr99RNgf8rs0hQ010zDW1RVA8YDErKntU07oFv3P3Jfxb5xubJThROeawkOKmKeNePZBwhFBb0pVwGkAQ81DVX2mGDahywv7Ob3E1tiRbm3WiOxqjnHj6iqFZpPzuCp4EqjoXuDZvlh9epVSrthzY5gKHHIj9KilGMl/7dxCUkpgWr+16cy65SwP+K26i+NLgWt2fRmVRenjP4hjZ9M5rUcW8a23snwIXTxwxuJmZSq4SLdPJZd+Ja+yE+isLjwSNYmWv/jEH8YAXPjFXBtKGbjYQCH767YdqqXCzP/qeWjVA3oEcsaNd3kan8Dlk5C2P0OWp7i/p0qD2sEPO8za9SdlcmRoeYdmqiJO0w/XwsdWO4DZbv6uIaoLeE7N24YYSlQWgi2jMTFXfCssn1NpPAm5z1LkqJU45XX5Z80BqQC6pT9/ZOil+BckFWW6f8Ygvhg/Q7soA7UvPUzrRyKgqN1NYpcyc+MwoAUc/e7tOuZNnafI=
+  - secure: wHd3xCZx1D10dsH+zpA0imkisFg3fHzq4RD/4o40JEocd1hKocw7JgAs8Cn62zsUUh1RhOdvVhY/LjEjH7X4GsUYQxi8DxEBr9sHk33amfotosygAJIOaPPkRoEmVF8pjGgjNzFO4LZikxIYRY7EqjpAnHrWbO4VylidcSk+K3AWDbKRe9K1IFrdqhVTdUHg/9zEqMmOEvczoM7JbQbD3Yk/2HxcuEty11DudHVxfxR8Ol5peguGiWnsJuNiqhdiGLJn/Km7S25FWys5aBNwF/kF/W8m8bEEqpFWYTRNeQ9/g2harGeFZIOo8Qy1K9g6puzmj1yMucfp7p8EQW3YVxmlmoKMBtQjIWbqAZzHlcV5FeQe9i21Hv1S4+JizrnqLkg1ek5Z6adUH95wKO9FDw9/NzER/bJoxYM/MDtiiGFN+nGYELkG7bRzHEnSL/diab6Z5QwHF3JF94mp8GMUd1qkjkY+WKLNPkHRJVCYH/bufBj85U+CXdhb2CRdedGCvJvswCH3pTYQq46LmYs8Y2bmHHoQijIoPqddwAAfUAUvcgQZ9xG+pA8kRk7fMSnlVXZ7Ims8ACPk5UMdJJScEtWBW1mDzSscP9uxO80W7JJk3B3+X7+QugKcVt0I+LLvoY7Xz9LVHpr2URTBlxCmopashrYGoZlzNYPn7DbBBPg=
