@@ -19,7 +19,7 @@ You can use the plugin by requiring it and specifying your Snowplow endpoint:
 <script>
   // usual isogram
   ga('create', 'UA-XXXXX-Y', 'auto');
-  ga('require', 'spGaPlugin', { endpoint: 'https://d3rkrsqld9gmqf.cloudfront.net/i' });
+  ga('require', 'spGaPlugin', { endpoint: 'd3rkrsqld9gmqf.cloudfront.net' });
   ga('send', 'pageView');
 </script>
 <scipt async src="https://d1fc8wv8zag5ca.cloudfront.net/0.1.0/sp-ga-plugin.js"></script>
