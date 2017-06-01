@@ -1,0 +1,27 @@
+{
+  "name": "snowplow-google-analytics-plugin",
+  "version": "0.1.0",
+  "description": "A Google Analytics plugin for sending payloads to Snowplow.",
+  "main": "sp-ga-plugin.js",
+  "scripts": {
+    "eslint": "eslint sp-ga-plugin.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/snowplow/snowplow-google-analytics-plugin.git"
+  },
+  "author": "Snowplow Analytics",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/snowplow/snowplow-google-analytics-plugin/issues"
+  },
+  "keywords": [
+    "snowplow",
+    "google analytics",
+    "analytics"
+  ],
+  "homepage": "https://snowplowanalytics.com",
+  "devDependencies": {
+    "eslint": "^3.19.0"
+  }
+}
