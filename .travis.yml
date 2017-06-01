@@ -1,3 +1,12 @@
 language: node_js
 node_js: "6"
 script: npm run eslint
+before_deploy: pip install --user release-manager==0.2.0
+deploy:
+  - provider: script
+    script: release-manager --config .release.yml --make-artifact --upload-artifact
+    skip_cleanup: true
+    on:
+      condition: |-
+        "$(node -e "console.log(require('./package.json').version);")" == "$TRAVIS_TAG"
+      tags: true
