@@ -4,6 +4,8 @@
 local:
   root_dir : <%= ENV['TRAVIS_BUILD_DIR'] %>
 
+tag: <%= ENV['TRAVIS_TAG'] %>
+
 # --- Release Manager Config --- #
 
 # Required: deployment targets
@@ -17,7 +19,7 @@ packages:
   # AWS S3 plain upload example
   - name     : "snowplow-google-analytics-plugin" # Just for convenience
     bucket   : "snowplow-static-js"
-    path     : <%= ENV['TRAVIS_TAG'] %>
+    path     : "sp-ga-plugin/{{ tag }}"
     region   : "eu-west-1"
     publish  : true
     override : false

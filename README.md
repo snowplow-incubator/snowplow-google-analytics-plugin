@@ -22,7 +22,7 @@ You can use the plugin by requiring it and specifying your Snowplow endpoint:
   ga('require', 'spGaPlugin', { endpoint: 'd3rkrsqld9gmqf.cloudfront.net' });
   ga('send', 'pageView');
 </script>
-<scipt async src="https://d1fc8wv8zag5ca.cloudfront.net/0.1.0/sp-ga-plugin.js"></script>
+<scipt async src="https://d1fc8wv8zag5ca.cloudfront.net/sp-ga-plugin/0.1.0/sp-ga-plugin.js"></script>
 ```
 
 ## Copyright and license
@@ -43,3 +43,12 @@ limitations under the License.
 
 [license]: http://www.apache.org/licenses/LICENSE-2.0
 [license-image]: http://img.shields.io/badge/license-Apache--2-blue.svg?style=flat
+
+
+[analysts-guide]: https://github.com/snowplow/snowplow-google-analytics-plugin/wiki/Guide-for-analysts
+[developers-guide]: https://github.com/snowplow/snowplow-google-analytics-plugin/wiki/Guide-for-developers
+[devops-guide]: https://github.com/snowplow/snowplow-google-analytics-plugin/wiki/Guide-for-devops
+
+[devops-image]:  http://sauna-github-static.s3-website-us-east-1.amazonaws.com/devops.svg
+[analysts-image]: http://sauna-github-static.s3-website-us-east-1.amazonaws.com/analyst.svg
+[developers-image]:  http://sauna-github-static.s3-website-us-east-1.amazonaws.com/developer.svg
