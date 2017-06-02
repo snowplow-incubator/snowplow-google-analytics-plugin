@@ -7,9 +7,9 @@
 [sp-ga-plugin.js](sp-ga-plugin.js) lets you fork the payloads sent to Google Analytics to your
 Snowplow endpoint.
 
-|   **[Devops Guide][devops-guide]**   |   **[Analysts Guide][analysts-guide]**  |   **[Developers Guide][developers-guide]**  |
-|:------------------------------------:|:---------------------------------------:|:-------------------------------------------:|
-|  [![i1][devops-image]][devops-guide] | [![i2][analysts-image]][analysts-guide] | [![i3][developers-image]][developers-guide] |
+|   **[Technical Docs][tech-docs]**   |   **[Setup Guide][setup-guide]**  | **Roadmap & contributing** |
+|:-----------------------------------:|:---------------------------------:|:--------------------------:|
+| [![i1][tech-docs-image]][tech-docs] | [![i2][setup-image]][setup-guide] |    ![i3][roadmap-image]    |
 
 ## Quickstart
 
@@ -45,10 +45,9 @@ limitations under the License.
 [license-image]: http://img.shields.io/badge/license-Apache--2-blue.svg?style=flat
 
 
-[analysts-guide]: https://github.com/snowplow/snowplow-google-analytics-plugin/wiki/Guide-for-analysts
-[developers-guide]: https://github.com/snowplow/snowplow-google-analytics-plugin/wiki/Guide-for-developers
-[devops-guide]: https://github.com/snowplow/snowplow-google-analytics-plugin/wiki/Guide-for-devops
+[tech-docs]: https://github.com/snowplow/snowplow/wiki/Google-Analytics-Plugin
+[setup-guide]: https://github.com/snowplow/snowplow/wiki/Google-Analytics-Plugin-Setup
 
-[devops-image]:  http://sauna-github-static.s3-website-us-east-1.amazonaws.com/devops.svg
-[analysts-image]: http://sauna-github-static.s3-website-us-east-1.amazonaws.com/analyst.svg
-[developers-image]:  http://sauna-github-static.s3-website-us-east-1.amazonaws.com/developer.svg
+[tech-docs-image]: https://d3i6fms1cm1j0i.cloudfront.net/github/images/techdocs.png
+[setup-image]: https://d3i6fms1cm1j0i.cloudfront.net/github/images/setup.png
+[roadmap-image]: https://d3i6fms1cm1j0i.cloudfront.net/github/images/roadmap.png
