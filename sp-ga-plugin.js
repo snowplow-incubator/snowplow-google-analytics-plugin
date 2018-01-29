@@ -25,16 +25,14 @@ function SpGaPlugin(tracker, config) {
   var ga = getGA();
   var sendHitTask = 'sendHitTask';
 
-  ga(function(tracker) {
-    var originalSendHitTask = tracker.get(sendHitTask);
-    tracker.set(sendHitTask, function(model) {
-      var payload = model.get('hitPayload');
-      originalSendHitTask(model);
-      var request = new XMLHttpRequest();
-      request.open('POST', path, true);
-      request.setRequestHeader("Content-type", "text/plain; charset=UTF-8")
-      request.send(payload);
-    });
+  var originalSendHitTask = tracker.get(sendHitTask);
+  tracker.set(sendHitTask, function(model) {
+    var payload = model.get('hitPayload');
+    originalSendHitTask(model);
+    var request = new XMLHttpRequest();
+    request.open('POST', path, true);
+    request.setRequestHeader("Content-type", "text/plain; charset=UTF-8")
+    request.send(payload);
   });
 }
 
