@@ -22,7 +22,6 @@ function SpGaPlugin(tracker, config) {
   var version = 'v1';
   var path = this.endpoint + vendor + '/' + version;
 
-  var ga = getGA();
   var sendHitTask = 'sendHitTask';
 
   var originalSendHitTask = tracker.get(sendHitTask);
