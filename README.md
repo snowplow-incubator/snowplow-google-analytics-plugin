@@ -37,7 +37,7 @@ The best way to deploy this using Google Tag Manager is to replicate the plugin 
 
 Create a new Custom JavaScript variable, and name it {{customTask - Snowplow duplicator}}. Add the following code within:
 
-```
+```javascript
 function() {
   // Add your snowplow collector endpoint here
   var endpoint = 'https://my.snowplow.collector.com/';
