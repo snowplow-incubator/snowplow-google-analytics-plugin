@@ -105,8 +105,8 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-[travis]: https://travis-ci.org/snowplow/snowplow-google-analytics-plugin
-[travis-image]: https://travis-ci.org/snowplow/snowplow-google-analytics-plugin.png?branch=master
+[travis]: https://travis-ci.org/snowplow-incubator/snowplow-google-analytics-plugin
+[travis-image]: https://travis-ci.org/snowplow-incubator/snowplow-google-analytics-plugin.png?branch=master
 
 [license]: http://www.apache.org/licenses/LICENSE-2.0
 [license-image]: http://img.shields.io/badge/license-Apache--2-blue.svg?style=flat
