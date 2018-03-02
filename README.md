@@ -88,6 +88,10 @@ Further reading on the topic:
 
 * [_#GTMTips: Automatically Duplicate Google Analytics Hits To Snowplow_](https://www.simoahava.com/analytics/automatically-fork-google-analytics-hits-snowplow/)
 
+## Questions or need help?
+
+Check out the **[Talk to us][talk-to-us]** page on our wiki.
+
 ## Copyright and license
 
 Google Analytics plugin for Snowplow is copyright 2018-2018 Snowplow Analytics Ltd.
@@ -113,3 +117,5 @@ limitations under the License.
 [tech-docs-image]: https://d3i6fms1cm1j0i.cloudfront.net/github/images/techdocs.png
 [setup-image]: https://d3i6fms1cm1j0i.cloudfront.net/github/images/setup.png
 [roadmap-image]: https://d3i6fms1cm1j0i.cloudfront.net/github/images/roadmap.png
+
+[talk-to-us]: https://github.com/snowplow/snowplow/wiki/Talk-to-us
