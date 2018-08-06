@@ -22,7 +22,7 @@ You can use the plugin by requiring it and specifying your Snowplow endpoint:
   ga('require', 'spGaPlugin', { endpoint: 'https://d3rkrsqld9gmqf.cloudfront.net' });
   ga('send', 'pageView');
 </script>
-<scipt async src="https://d1fc8wv8zag5ca.cloudfront.net/sp-ga-plugin/0.1.0/sp-ga-plugin.js"></script>
+<script async src="https://d1fc8wv8zag5ca.cloudfront.net/sp-ga-plugin/0.1.0/sp-ga-plugin.js"></script>
 ```
 
 Where `https://d3rkrsqld9gmqf.cloudfront.net` is your Snowplow collector endpoint.
