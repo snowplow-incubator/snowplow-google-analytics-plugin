@@ -22,6 +22,6 @@
   ],
   "homepage": "https://snowplowanalytics.com",
   "devDependencies": {
-    "eslint": "^3.19.0"
+    "eslint": "^7.10.0"
   }
 }
