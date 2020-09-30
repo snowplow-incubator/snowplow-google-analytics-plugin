@@ -22,7 +22,7 @@ You can use the plugin by requiring it and specifying your Snowplow endpoint:
   ga('require', 'spGaPlugin', { endpoint: 'https://my-collector.cloudfront.net' });
   ga('send', 'pageView');
 </script>
-<scipt async src="https://cdn.jsdelivr.net/gh/snowplow-incubator/snowplow-google-analytics-plugin@0.1.0/sp-ga-plugin.js"></script>
+<script async src="https://cdn.jsdelivr.net/gh/snowplow-incubator/snowplow-google-analytics-plugin@0.1.0/sp-ga-plugin.js"></script>
 ```
 
 ## Deployment with Google Tag Manager
